@@ -1,12 +1,28 @@
+<style>
+div.login_container {
+    background: none repeat scroll 0 0 white;
+    border: 3px solid #CCCCCC;
+    margin: 0 auto;
+    padding: 30px;
+    text-align: left;
+    width: 300px;
+}
+</style>
+
+<script>
+$(document).ready(function(){
+    $("#new_user").validationEngine('attach');
+   });
+</script>
 <div class="alert"><p><%= alert %></p>
 <div class="login_container">
 <%= form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |f| %>	
 	<fieldset>
 		<p><%= f.label :email %><br />
-		<%= f.email_field :email %></p>
+		<%= f.email_field :email,  :class=>"validate[required, custom[email]]"  %></p>
 
 		<p><%= f.label :password %><br />
-		<%= f.password_field :password %></p>
+		<%= f.password_field :password,  :class=>"validate[required]"  %></p>
 
 		<% if devise_mapping.rememberable? -%>
 			<p><%= f.check_box :remember_me %> <%= f.label :remember_me %></p>

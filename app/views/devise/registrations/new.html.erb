@@ -1,3 +1,10 @@
+
+<script>
+$(document).ready(function(){
+    $("#new_user").validationEngine('attach');
+   });
+</script>
+
 <h2>Sign up</h2>
 
 <p><%= devise_error_messages! %></p>
@@ -6,24 +13,26 @@
 	<fieldset>
 	
 		<p><%= f.label :company_name %><br />
-		<%= f.email_field :company_name %></p>
+		<%= f.email_field :company_name, :class=>"validate[required]" %></p>
 		
 		<p><%= f.label :surname %><br />
-		<%= f.email_field :surname %></p>
+		<%= f.email_field :surname, :class=>"validate[required]" %></p>
 		
 		<p><%= f.label :email %><br />
-		<%= f.email_field :email %></p>
+		<%= f.email_field :email, :class=>"validate[required, custom[email]]" %></p>
 
 		<p><%= f.label :password %><br />
-		<%= f.password_field :password %></p>
+		<%= f.password_field :password, :class=>"validate[required]" %></p>
 
 		<p><%= f.label :password_confirmation %><br />
-		<%= f.password_field :password_confirmation %></p>
+		<%= f.password_field :password_confirmation,  :class=>"validate[required,equals[user_password]]"   %></p>
 
-		<p><%= f.submit "Sign up" %></p>
+		<p><%= f.submit "Sign up" %></p>		
+		
 	</fieldset>
 <% end %>
 </div>
+
 
 
 

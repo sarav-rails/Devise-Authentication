@@ -1,0 +1,98 @@
+html,body,div,fieldset {
+border:0;
+font-size:100%;
+font:inherit;
+vertical-align:baseline;
+margin:0;
+padding:0;
+}
+
+body {
+font-family:"Lucida Grande",Verdana,Helvetica,Arial,Verdana,sans-serif;
+line-height:1.5;
+font-size:75%;
+background-color:#F3F3F3;
+background:#F3F3F3;
+color:#000;
+height:100%;
+}
+
+
+p {
+text-align:justify;
+margin:0 0 1.5em;
+}
+
+
+a {
+text-decoration:underline;
+outline:none;
+cursor:pointer;
+color:#06c;
+}
+
+
+
+label {
+text-align:left;
+font-weight:400;
+}
+
+
+
+body.blue {
+text-align:center;
+margin:0 auto;
+padding:0;
+}
+
+body.blue div.login_container {
+background:#FFF;
+border:3px solid #CCC;
+text-align:left;
+width:300px;
+margin:0 auto;
+padding:30px;
+}
+
+body.blue div.login_container.wide {
+width:520px;
+}
+
+body.blue fieldset {
+width:300px;
+margin:0 auto;
+}
+
+body.blue .accept_invitation fieldset label {
+font-size:12px;
+line-height:18px;
+}
+
+body.blue fieldset p.submit {
+text-align:center;
+margin:30px 0 0;
+}
+
+body.blue label {
+font-size:14px;
+line-height:30px;
+}
+
+body.blue input#login,body.blue input#password,body.blue input#user_email,body.blue input#email,body.blue input#user_password,body.blue input#user_password_confirmation,body.blue input#user_current_password,body.blue input#user_name {
+font-size:16px;
+width:290px;
+padding:5px;
+}
+
+body.blue .flash {
+border:none;
+width:500px;
+margin:15px auto;
+padding:5px 30px;
+}
+
+body.blue p.login_message {
+text-align:left;
+font-size:.9em;
+}
