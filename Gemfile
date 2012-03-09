@@ -42,4 +42,5 @@ gem 'jquery-rails'
 
 gem 'devise'
 
+#To send email
 gem 'tlsmail'
