@@ -11,10 +11,10 @@ $(document).ready(function(){
 	<fieldset>
 	
 		<p><%= f.label :company_name %><br />
-		<%= f.email_field :company_name, :class=>"validate[required]" %></p>
+		<%= f.text_field :company_name, :class=>"validate[required]" %></p>
 		
 		<p><%= f.label :surname %><br />
-		<%= f.email_field :surname, :class=>"validate[required]" %></p>
+		<%= f.text_field :surname, :class=>"validate[required]" %></p>
 		
 		<p><%= f.label :email %><br />
 		<%= f.email_field :email, :class=>"validate[required]" %></p>
