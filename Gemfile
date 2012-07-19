@@ -44,3 +44,5 @@ gem 'devise'
 
 #To send email
 gem 'tlsmail'
+
+#update gems
